@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoja de Vida | Geily Recalde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="avatar" aria-hidden="true">GR</div>
+    <h1>Recalde Cuzco Geily Yamilex</h1>
+    <p>Estudiante de Computación</p>
+  </header>
+
+  <main>
+    <section id="datos">
+      <h2>Contacto</h2>
+      <ul class="datos">
+        <li><strong>Teléfono:</strong> 0963758214</li>
+        <li><strong>Correo:</strong> geilyrecalde372@gmail.com</li>
+        <li><strong>Dirección:</strong> Mira, Carchi, Ecuador</li>
+      </ul>
+    </section>
+
+    <section id="idiomas">
+      <h2>Idiomas</h2>
+      <ul class="datos">
+        <li><strong>Español:</strong> Nativo</li>
+      </ul>
+    </section>
+
+    <section id="perfil">
+      <h2>Perfil profesional</h2>
+      <p>Estudiante de séptimo nivel de la Carrera de Computación en la Universidad Politécnica Estatal del Carchi (UPEC), con formación complementaria en programación y seguridad informática, y bachiller técnica en Contabilidad. Responsable y con gran capacidad de aprendizaje, busco mi primera oportunidad de prácticas preprofesionales o pasantía para aplicar mis conocimientos en desarrollo de software y apoyo informático, y seguir creciendo profesionalmente.</p>
+    </section>
+
+    <section id="formacion">
+      <h2>Formación académica</h2>
+      <article>
+        <details open>
+          <summary>Carrera de Computación (en curso, 7.º nivel)</summary>
+          <p>Universidad Politécnica Estatal del Carchi (UPEC) – Facultad de Industrias Agropecuarias y Ciencias Ambientales · 2026 – Actualidad</p>
+          <p><strong>Materias afines:</strong> Visión por Computador, Aplicaciones Móviles, Redes, Normativas.</p>
+        </details>
+      </article>
+      <article>
+        <details>
+          <summary>Bachiller Técnica en Contabilidad</summary>
+          <p>Unidad Educativa Juan Montalvo · 2022</p>
+        </details>
+      </article>
+    </section>
+
+    <section id="cursos">
+      <h2>Cursos y certificaciones</h2>
+      <article>
+        <details open>
+          <summary>Cisco Networking Academy</summary>
+          <p>Lenguajes de Programación – 2026</p>
+          <p>Seguridad Informática – 2026</p>
+        </details>
+      </article>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="filtros">
+        <button class="chip activo" data-f="todas">Todas</button>
+        <button class="chip" data-f="tecnica">Técnicas</button>
+        <button class="chip" data-f="personal">Personales</button>
+      </div>
+      <ul class="skills">
+        <li data-c="tecnica">Fundamentos de programación</li>
+        <li data-c="tecnica">Seguridad informática básica</li>
+        <li data-c="tecnica">Word, Excel y PowerPoint</li>
+        <li data-c="tecnica">Diseño de presentaciones (Canva)</li>
+        <li data-c="tecnica">Nociones de contabilidad</li>
+        <li data-c="personal">Trabajo en equipo</li>
+        <li data-c="personal">Responsabilidad</li>
+        <li data-c="personal">Aprendizaje rápido</li>
+        <li data-c="personal">Comunicación efectiva</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Escríbeme</h2>
+      <form id="form" novalidate>
+        <label>Nombre <input id="nombre" type="text" required></label>
+        <label>Correo <input id="correo" type="email" required></label>
+        <label>Mensaje <textarea id="mensaje" rows="3" required></textarea></label>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="estado" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Geily Recalde · UPEC</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
